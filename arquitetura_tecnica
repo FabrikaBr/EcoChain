@@ -1,0 +1,19 @@
+bio-germina/  
+├── public/  
+├── src/  
+│   ├── assets/            # Imagens, ícones, fonts  
+│   ├── components/         # Componentes reutilizáveis  
+│   ├── pages/              # Telas do app  
+│   │   ├── Home.jsx  
+│   │   ├── Map.jsx  
+│   │   ├── RegisterPlant.jsx  
+│   │   └── Wallet.jsx  
+│   ├── services/           # Integrações com APIs e Blockchain  
+│   │   ├── api.js          # Chamadas HTTP  
+│   │   ├── blockchain.js   # Smart contracts, transações  
+│   │   └── auth.js         # Autenticação  
+│   ├── contexts/           # Contextos React (autenticação, dados)  
+│   ├── styles/             # CSS global ou temas  
+│   └── App.js              # Rotas principais  
+├── .env                    # Variáveis de ambiente (API keys)  
+└── netlify.toml            # Configuração de deploy na Netlify  
