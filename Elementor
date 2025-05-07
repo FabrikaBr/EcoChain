@@ -1,0 +1,180 @@
+Elementos Estruturais Principais (Inspirados na IBM.com)
+Header Minimalista com Mega Menu
+
+Logo à esquerda, menu principal centralizado, botão de contato à direita.
+
+Mega Menu (como o da IBM): Dropdowns organizados por categorias (ex: "Soluções", "Indústrias", "Sobre Nós").
+
+Hero Section Impactante
+
+Vídeo ou imagem em full-screen com título e subtítulo curtos.
+
+Call-to-action direto (ex: "Explore Nossas Soluções Industriais").
+
+Seção de Soluções em Grid
+
+Cards com ícones e títulos curtos (ex: "Engenharia Personalizada", "Tecnologia de Ponta").
+
+Seção de Cases de Sucesso
+
+Layout de carrossel ou grid com projetos destacados (ex: "Parceria com Empresa X + Resultados").
+
+Recursos e Insights
+
+Blog ou artigos técnicos em formato de cards (como a seção "Latest thinking" da IBM).
+
+Footer Organizado em Colunas
+
+Links rápidos, contato, redes sociais e selos de segurança.
+
+Passo a Passo com Elementor Pro
+1. Configuração do Tema e Cores
+Tema: Use Hello Elementor (leve e compatível).
+
+Cores:
+
+Primária: Azul escuro (ex: #0A1F3A - similar ao da IBM).
+
+Secundária: Laranja ou verde para destaques (ex: #FF6B00).
+
+Fontes:
+
+Títulos: Poppins (bold).
+
+Corpo: Inter (regular).
+
+2. Header no Estilo IBM
+Crie um Header Personalizado:
+
+Vá para Elementor Theme Builder > Adicionar Novo > Header.
+
+Use 3 colunas:
+
+Coluna 1: Logo (centralizado verticalmente).
+
+Coluna 2: Menu principal (use o widget Menu do Elementor).
+
+Coluna 3: Botão "Contato" (estilo outline, cor secundária).
+
+Mega Menu (como o da IBM):
+
+Instale o plugin JetMenu (para menus avançados).
+
+Configure dropdowns com:
+
+Título da Categoria (ex: "Soluções").
+
+Descrição Curta + Links Rápidos (ex: "Engenharia", "Logística", "Tecnologia").
+
+3. Hero Section com Vídeo de Fundo
+Adicione uma seção Full Width.
+
+Background:
+
+Vídeo (use um vídeo curto em loop) ou imagem hero com overlay escuro.
+
+Conteúdo:
+
+Título: <h1>Soluções Industriais para um Mundo em Transformação</h1>.
+
+Subtítulo: "Inovação, precisão e sustentabilidade para sua empresa".
+
+Botão: "Conheça Nossos Serviços" (link para /servicos).
+
+4. Seção "Nossas Soluções" (Grid de Cards)
+Adicione uma seção com Container Grid do Elementor Pro.
+
+Cards:
+
+Estrutura:
+
+Ícone (use ícones SVG ou Font Awesome).
+
+Título (ex: "Automação Industrial").
+
+Descrição curta (ex: "Sistemas integrados para aumento de produtividade").
+
+Botão "Saiba Mais".
+
+Efeitos: Hover com sombra e transição suave.
+
+5. Seção "Cases de Sucesso" (Carrossel)
+Use o widget Carrossel do Elementor Pro.
+
+Slides:
+
+Imagem do projeto.
+
+Título (ex: "Expansão da Fábrica XYZ").
+
+Métricas (ex: "+40% de eficiência").
+
+Link para estudo de caso completo.
+
+6. Seção "Recursos Técnicos" (Estilo IBM "Latest Thinking")
+Adicione um Post Grid do Elementor Pro vinculado ao blog.
+
+Layout:
+
+Cards com imagem em destaque.
+
+Tags (ex: "Inovação", "Tecnologia").
+
+Botão "Leia Mais".
+
+7. Footer com Múltiplas Colunas
+Coluna 1:
+
+Logo reduzido.
+
+Texto: "FabrikaBr: Excelência industrial desde 2005".
+
+Coluna 2:
+
+Título: "Soluções".
+
+Links: "Engenharia", "Tecnologia", "Consultoria".
+
+Coluna 3:
+
+Título: "Contato".
+
+E-mail, telefone, endereço.
+
+Coluna 4:
+
+Redes sociais (widget Ícones Sociais).
+
+Selos de segurança (ex: "SSL Certificado").
+
+Plugins Recomendados para Funcionalidades IBM-like
+JetMenu: Para mega menus avançados.
+
+Elementor Pro: Para templates e widgets premium.
+
+Dynamic Content for Elementor: Para conteúdo dinâmico (cases, blog).
+
+WPML: Se precisar de suporte multilíngue.
+
+Exemplo de Código para Estilos Personalizados (CSS)
+Adicione em Elementor > Configurações > CSS Personalizado:
+
+css
+/* IBM-like Button */  
+.ibm-button {  
+  background-color: #0A1F3A;  
+  color: #FFF;  
+  padding: 12px 24px;  
+  border-radius: 4px;  
+  font-weight: 600;  
+  transition: 0.3s;  
+}  
+.ibm-button:hover {  
+  background-color: #FF6B00;  
+}  
+
+/* Card Hover Effect */  
+.elementor-widget-container:hover {  
+  transform: translateY(-5px);  
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);  
+}  
