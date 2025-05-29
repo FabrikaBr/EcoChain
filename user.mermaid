@@ -1,0 +1,16 @@
+sequenceDiagram
+    participant Usuário
+    participant App
+    participant Backend
+    participant Blockchain
+    
+    Usuário->>App: Abre o app pela primeira vez
+    App->>Usuário: Exibe onboarding (3 telas explicativas)
+    Usuário->>App: Clica em "Criar Conta"
+    App->>Backend: Envia dados cadastrais (nome, email, etc.)
+    Backend->>Blockchain: Cria carteira blockchain
+    Blockchain->>Backend: Retorna endereço da carteira
+    Backend->>Blockchain: Cria NFT de validação do usuário
+    Backend->>Banco de Dados: Armazena (UserID, encrypted_wallet_address)
+    Backend->>App: Retorna UserID e token de acesso
+    App->>Usuário: Redireciona para tela de perfil
