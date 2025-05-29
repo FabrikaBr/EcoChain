@@ -1,0 +1,11 @@
+graph TD
+    A[Usuário registra árvore] --> B[App captura dados + foto com geolocalização]
+    B --> C[Backend cria registro no banco de dados]
+    C --> D[Backend gera hash SHA-256 dos dados]
+    D --> E[Backend registra hash na blockchain]
+    E --> F[Smart Contract emite evento ActivityRegistered]
+    F --> G[App mostra confirmação para usuário]
+    
+    H[Usuário visualiza atividade] --> I[App busca dados do banco]
+    I --> J[Backend verifica hash na blockchain]
+    J --> K[Se hash coincidir, mostra dados autênticos]
