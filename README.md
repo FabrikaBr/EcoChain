@@ -37,7 +37,7 @@ Aplicativo para **rastreabilidade genética de sementes** e coleta sustentável,
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/bio-germina.git
+   git clone https://github.com/fabrikabrio/bio-germina.git
    cd bio-germina
 
 
