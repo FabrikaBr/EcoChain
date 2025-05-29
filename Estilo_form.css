@@ -1,0 +1,405 @@
+/* src/App.css */
+:root {
+  --primary: #2E7D32;
+  --primary-dark: #1B5E20;
+  --primary-light: #4CAF50;
+  --secondary: #1976D2;
+  --text: #333333;
+  --text-light: #666666;
+  --background: #F8F9FA;
+  --card-bg: #FFFFFF;
+  --border: #E0E0E0;
+  --success: #4CAF50;
+  --error: #F44336;
+  --warning: #FFC107;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background-color: var(--background);
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.logo-icon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1rem;
+}
+
+.leaf {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: #FFFFFF;
+  border-radius: 0 60px 0 60px;
+  transform: rotate(45deg);
+  top: 10px;
+  left: 10px;
+}
+
+.dna {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 4px solid var(--secondary);
+  border-radius: 50%;
+  top: 20px;
+  left: 20px;
+}
+
+.dna:before, .dna:after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: var(--secondary);
+  border-radius: 50%;
+}
+
+.dna:before {
+  top: -8px;
+  left: 12px;
+}
+
+.dna:after {
+  bottom: -8px;
+  right: 12px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  gap: 2rem;
+}
+
+.form-container {
+  flex: 1;
+  min-width: 300px;
+  background: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+}
+
+.form-container h2 {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: var(--text-light);
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.info-panel {
+  flex: 0 0 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.info-card {
+  background: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+}
+
+.info-card h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.info-card ul, .info-card ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.info-card li {
+  margin-bottom: 0.5rem;
+}
+
+.form-section {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.form-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--primary-dark);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.2);
+}
+
+input[type="file"] {
+  padding: 0.5rem;
+}
+
+.location-container {
+  background: #E8F5E9;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.location-success {
+  color: var(--primary-dark);
+}
+
+.coordinates {
+  font-family: monospace;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.accuracy {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.location-btn {
+  background: var(--secondary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.location-btn:hover {
+  background: #1565C0;
+}
+
+.retry-btn {
+  background: var(--warning);
+  color: #333;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.photo-instructions {
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.photo-preview {
+  background: #F5F5F5;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+
+.photo-preview ul {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.blockchain-info {
+  display: flex;
+  align-items: center;
+  background: #E3F2FD;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+}
+
+.blockchain-icon {
+  font-size: 1.8rem;
+  margin-right: 1rem;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin: 1.5rem 0;
+}
+
+.submit-btn:hover {
+  background: var(--primary-dark);
+}
+
+.submit-btn:disabled {
+  background: #BDBDBD;
+  cursor: not-allowed;
+}
+
+.spinner {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+  margin-right: 0.5rem;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.form-note {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  text-align: center;
+}
+
+.success-message, .error-message {
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.success-message {
+  background: #E8F5E9;
+  border-left: 4px solid var(--success);
+}
+
+.error-message {
+  background: #FFEBEE;
+  border-left: 4px solid var(--error);
+}
+
+.location-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.location-loading .spinner {
+  width: 2rem;
+  height: 2rem;
+  border-width: 4px;
+  margin-top: 1rem;
+}
+
+.footer {
+  background: var(--primary-dark);
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: auto;
+}
+
+.footer p {
+  margin: 0.3rem 0;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+  
+  .info-panel {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+  }
+}
